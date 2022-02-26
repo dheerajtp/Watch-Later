@@ -59,6 +59,7 @@ function MyList({ isAuthenticated }) {
 
   useEffect(() => {
     getDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (error) {
     return <Navigate to="/error" />;
