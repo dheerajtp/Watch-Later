@@ -24,13 +24,7 @@ function Login({ setIsAuthenticated }) {
         </h1>
 
         <p className="max-w-md mx-auto mt-4 text-center text-gray-500">
-          Watch Later is a website where you can keep track of popular movies,
-          top rated movies and upcoming movies. It also gives the option to show
-          a movie in detail by clicking in the movie title in each movie with
-          some similiar movie suggestions. We can also login using the google
-          account and add a movie to the watch later list and remove it from the
-          list too. It is created to keep track of movies which we may love to
-          watch later.
+          A web application to keep track of movies which you may love to watch later, with an option to view popular,top rated and upcoming movies. Created using React JS, Firebase and TMDB API.
         </p>
         <p className="max-w-md mx-auto mt-4 text-center text-gray-500">
           Nb: We Will Not Share Your Details With Any One.
