@@ -21,7 +21,7 @@ function RecomendationSingle({ movie, key, isAuthenticated }) {
               />
 
               <div className="bottom-0 right-0 mb-2 mr-2 px-2 rounded-lg absolute bg-yellow-500 text-gray-100 text-xs font-medium">
-                Recommendation
+                Similiar
               </div>
             </div>
             <div className="px-2 py-1">
