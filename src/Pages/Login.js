@@ -24,7 +24,7 @@ function Login({ setIsAuthenticated }) {
         </h1>
 
         <p className="max-w-md mx-auto mt-4 text-center text-gray-500">
-          A web application to keep track of movies which you may love to watch later, with an option to view popular,top rated and upcoming movies. Created using React JS, Firebase and TMDB API.
+          A web application to keep track of movies which you may love to watch later, with an option to view popular,top rated and upcoming movies.
         </p>
         <p className="max-w-md mx-auto mt-4 text-center text-gray-500">
           Nb: We Will Not Share Your Details With Any One.
