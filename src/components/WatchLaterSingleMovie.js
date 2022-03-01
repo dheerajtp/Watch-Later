@@ -37,7 +37,7 @@ const WatchLaterSingleMovie = ({ movie, id }) => {
               <img
                 src={image}
                 className="max-h-11/12 min-w-20 object-cover rounded-t-xl"
-                alt={movie.movie.original_title}
+                alt={movie.movie.title}
               />
 
               <div className="bottom-0 right-0 mb-2 mr-2 px-2 rounded-lg absolute bg-yellow-500 text-gray-100 text-xs font-medium">
