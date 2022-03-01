@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 import { addDoc, getDocs, collection, query, where } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
+import Loading from "./Loading";
 
 function SingleItem({ movie, id, isAuthenticated, toprated, upcoming }) {
   const [loading, setLoading] = useState(false);
@@ -24,6 +25,7 @@ function SingleItem({ movie, id, isAuthenticated, toprated, upcoming }) {
       addToast("Movie Is Already Present In Watch Later List", {
         appearance: "error",
       });
+      setLoading(false);
     } else {
       await addDoc(watchLaterCollectionReference, {
         movieid: movie.id,
@@ -42,7 +44,9 @@ function SingleItem({ movie, id, isAuthenticated, toprated, upcoming }) {
       setLoading(false);
     }
   };
-
+  if (loading) {
+    return <Loading />;
+  } else {
   return (
     <div className="py-5 flex justify-center items-center" key={id}>
       <div className="relative pl-1 flex justify-center rounded-xl ">
@@ -116,6 +120,7 @@ function SingleItem({ movie, id, isAuthenticated, toprated, upcoming }) {
       </div>
     </div>
   );
+  }
 }
 
 export default SingleItem;
